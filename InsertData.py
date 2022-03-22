@@ -24,4 +24,5 @@ try:
 except Exception as e:
     logging.error("Insertion couldn't be made ", e)
 finally:
+    pointer.close()
     connection.close()

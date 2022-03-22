@@ -33,4 +33,5 @@ try:
 except Exception as e:
     logging.error("Table is Duplicated", e)
 finally:
+    pointer.close()
     connection.close()

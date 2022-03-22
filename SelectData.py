@@ -28,6 +28,6 @@ try:
     for row in rows:
         file.writelines(row[1]+'\n')
     #     print(row[1], '-------LOAN--------', row[-1])
-
 finally:
+    pointer.close()
     logging.info("Data retrieved")

@@ -23,4 +23,5 @@ try:
 except Exception as e:
     logging.error("Deletion couldn't be made ", e)
 finally:
+    pointer.close()
     connection.close()

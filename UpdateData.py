@@ -22,4 +22,5 @@ try:
 except Exception as e:
     logging.error("Update couldn't be made ", e)
 finally:
+    pointer.close()
     connection.close()
